@@ -118,4 +118,25 @@ site/
 *.temp
 
 # uv
-uv.lock
+uv.locklevel.log
+serverConfig.json
+*.pyc
+*.pyo
+*.pyd
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.eslintcache
+.node_repl_history
+*.tgz
+*.tar.gz
+.parcel-cache/
+.next/
+out/
+.nuxt/
+.vuepress/dist
+.serverless/
+.fusebox/
+.dynamodb/

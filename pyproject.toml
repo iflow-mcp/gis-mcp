@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 
 [project]
-name = "gis-mcp"
+name = "iflow-mcp_gis-mcp"
 version = "0.9.0"
 description = "A Model Context Protocol (MCP) server implementation for GIS operations using GIS libraries"
 readme = "README.md"
@@ -99,7 +99,10 @@ all = [
 ]
 
 [project.scripts]
-gis-mcp = "gis_mcp.main:main"
+gis-mcp = "src.gis_mcp.main:main"
 
 [tool.hatch.metadata]
 allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gis_mcp"]
